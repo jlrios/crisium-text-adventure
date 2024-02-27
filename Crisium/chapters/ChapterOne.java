@@ -17,7 +17,7 @@ public class ChapterOne {
                  █▀▀ ▄▀█ █▀█ █ ▀█▀ █░█ █░░ █▀█   ▄█
                  █▄▄ █▀█ █▀▀ █ ░█░ █▄█ █▄▄ █▄█   ░█
                 """;
-        subTitle = "    █▓▒▒░░░MARE CRISIUM░░░▒▒▓█";
+        subTitle = "   █▓▒▒░░░ MARE CRISIUM ░░░▒▒▓█";
         text = """
                     // UN CAOS ORDENADO //
                     

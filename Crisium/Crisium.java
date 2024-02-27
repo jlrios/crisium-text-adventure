@@ -11,6 +11,8 @@ import utilities.Utilities;
  * Updates:
  */
 public class Crisium {
+    static  Game game = new Game();
+
     public static void gamePrompt() {
         ChapterOne chapterOne = new ChapterOne();
         Scanner readCommand = new Scanner(System.in);
@@ -18,13 +20,14 @@ public class Crisium {
         // Chapters, depending on whether it's a new game or a loaded game.
         // Task pending for later.
         chapterOne.partOne();
-        commands = " Ingresa el comando [QUIT] para salir en cualquier momento del juego,\n"
-                + " o el comando [SAVE] para salvar la partida actual.\n\n";
-        System.out.print(commands);
+        // commands = " Ingresa el comando [QUIT] para salir en cualquier momento del juego,\n"
+        //          + " o el comando [SAVE] para salvar la partida actual.\n\n";
+        game.basicCommandsMenu();
+        // System.out.print(commands);
         do {
             System.out.print(" >_ ");
             command = readCommand.nextLine();
-        } while (!command.equalsIgnoreCase("QUIT"));
+        } while (!command.trim().equalsIgnoreCase("Q"));
     }
     public static void main(String[] args) {
         Game game = new Game();

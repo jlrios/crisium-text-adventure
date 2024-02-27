@@ -30,7 +30,7 @@ public class Game {
              ██║     ██╔══██╗██║╚════██║██║██║   ██║██║╚██╔╝██║
              ╚██████╗██║  ██║██║███████║██║╚██████╔╝██║ ╚═╝ ██║
               ╚═════╝╚═╝  ╚═╝╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝
-                  █▓▒▒░░░¡BIENVENIDO A LA AVENTURA!░░░▒▒▓█
+                 █▓▒▒░░░ ¡BIENVENIDO A LA AVENTURA! ░░░▒▒▓█
             """;
         about = """
                  Ficción de texto interactiva
@@ -75,5 +75,15 @@ public class Game {
                 """;
         System.out.println("\n" + menu);
         System.out.print(" Ingresa opción: ");
+    }
+
+    public void basicCommandsMenu() {
+        String basicCommands, specials;
+        basicCommands = " Opciones: \n"
+            + " N - [IR AL NORTE]  S - [IR AL SUR]     Q - [SALIR]\n"
+            + " E - [IR AL ESTE]   W - [IR AL OESTE]   S - [GUARDAR PARTIDA]\n";
+        specials =" Especiales: \n [T] INGRESAR INSTRUCCIÓN EN TERMINAL\n";
+        System.out.println(basicCommands);
+        System.out.println(specials);
     }
 }
