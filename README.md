@@ -1,2 +1,2 @@
 CRISIUM
-Text-based game.
+Text Adventure Sci-Fi game.
